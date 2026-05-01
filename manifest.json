@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리 개발 도우미",
+  "version": "1.0",
+  "description": "초시계 및 대답창 토글 도구",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
